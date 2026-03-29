@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 100" width="450" height="100">
+  <defs>
+    <style>
+      .brand-text {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        font-size: 38px;
+        font-weight: 700;
+        fill: #0f172a;
+        letter-spacing: 0.18em;
+      }
+      .node-primary { fill: #0284c7; }
+      .node-secondary { fill: #94a3b8; }
+      .edge-thick { stroke: #0284c7; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+      .edge-thin { stroke: #cbd5e1; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <!-- Clean, isometric geometric lattice forming a "C" -->
+  <g transform="translate(15, 0)">
+    <!-- Inner structural connections -->
+    <path class="edge-thin" d="M 65 30 L 40 30 L 25 50 L 40 70 L 65 70" fill="none" />
+    <path class="edge-thin" d="M 40 30 L 25 25 M 25 50 L 15 50 M 40 70 L 25 75" fill="none" />
+    <path class="edge-thin" d="M 65 30 L 55 15 M 65 70 L 55 85" fill="none" />
+
+    <!-- Outer bold "C" shape -->
+    <path class="edge-thick" d="M 75 25 L 55 15 L 25 25 L 15 50 L 25 75 L 55 85 L 75 75" fill="none" />
+
+    <!-- Nodes -->
+    <circle class="node-primary" cx="75" cy="25" r="3" />
+    <circle class="node-primary" cx="55" cy="15" r="4.5" />
+    <circle class="node-primary" cx="25" cy="25" r="4.5" />
+    <circle class="node-primary" cx="15" cy="50" r="5" />
+    <circle class="node-primary" cx="25" cy="75" r="4.5" />
+    <circle class="node-primary" cx="55" cy="85" r="4.5" />
+    <circle class="node-primary" cx="75" cy="75" r="3" />
+
+    <circle class="node-secondary" cx="65" cy="30" r="2.5" />
+    <circle class="node-secondary" cx="40" cy="30" r="3" />
+    <circle class="node-secondary" cx="25" cy="50" r="3" />
+    <circle class="node-secondary" cx="40" cy="70" r="3" />
+    <circle class="node-secondary" cx="65" cy="70" r="2.5" />
+  </g>
+
+  <!-- Perfectly aligned typography -->
+  <text x="115" y="63" class="brand-text">CERTIOR</text>
+</svg>
